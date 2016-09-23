@@ -15,6 +15,7 @@
 		77EC54371D89D94C00B2E8CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */; };
 		77EC54421D89D94C00B2E8CC /* HopHeadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54411D89D94C00B2E8CC /* HopHeadTests.swift */; };
 		77EC544D1D89D94C00B2E8CC /* HopHeadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC544C1D89D94C00B2E8CC /* HopHeadUITests.swift */; };
+		8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		77EC54481D89D94C00B2E8CC /* HopHeadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopHeadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC544C1D89D94C00B2E8CC /* HopHeadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopHeadUITests.swift; sourceTree = "<group>"; };
 		77EC544E1D89D94C00B2E8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		77EC54281D89D94B00B2E8CC /* HopHead */ = {
 			isa = PBXGroup;
 			children = (
+				8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */,
 				77EC54291D89D94B00B2E8CC /* AppDelegate.swift */,
 				77EC542B1D89D94B00B2E8CC /* ViewController.swift */,
 				77EC542D1D89D94C00B2E8CC /* Main.storyboard */,
@@ -265,6 +268,7 @@
 				77EC542C1D89D94B00B2E8CC /* ViewController.swift in Sources */,
 				77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */,
 				77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */,
+				8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +495,7 @@
 				77EC54531D89D94C00B2E8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77EC54541D89D94C00B2E8CC /* Build configuration list for PBXNativeTarget "HopHeadTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				77EC54561D89D94C00B2E8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77EC54571D89D94C00B2E8CC /* Build configuration list for PBXNativeTarget "HopHeadUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				77EC54591D89D94C00B2E8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

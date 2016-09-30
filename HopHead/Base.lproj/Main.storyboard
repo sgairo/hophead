@@ -111,7 +111,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="kfl-wa-CgP"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="kfl-wa-CgP"/>
                                     <tabBarItem title="Add" image="plus" id="YV7-iH-EI0"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="mVP-1e-NbO"/>
                                 </items>
@@ -153,7 +153,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="Tym-gK-X7v"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="Tym-gK-X7v"/>
                                     <tabBarItem title="Add" image="plus" selectedImage="Plus Math-50" id="QTr-3Q-iMx"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="rt6-1d-3QI"/>
                                 </items>
@@ -553,7 +553,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="tzg-GE-FLV"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="tzg-GE-FLV"/>
                                     <tabBarItem title="Add" image="plus" selectedImage="Plus Math-50" id="nEF-hh-HzI"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="QD6-hK-QgV"/>
                                 </items>
@@ -981,7 +981,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="dqj-N4-nUd"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="dqj-N4-nUd"/>
                                     <tabBarItem title="Add" image="plus" selectedImage="Plus Math-50" id="F2Z-4N-wZS"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="0WY-tM-YLE"/>
                                 </items>
@@ -1393,7 +1393,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="bMX-Qm-YDO"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="bMX-Qm-YDO"/>
                                     <tabBarItem title="Add" image="plus" selectedImage="Plus Math-50" id="8TB-c4-F5Q"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="TVj-vH-Gzd"/>
                                 </items>
@@ -1880,6 +1880,20 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="xJM-sB-6db">
+                                <rect key="frame" x="207" y="256" width="207" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.090196078431372548" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Le Petite Prince">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Futura-CondensedExtraBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="DyL-IG-Xsl">
                                 <rect key="frame" x="0.0" y="256" width="207" height="213.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1922,7 +1936,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="44S-FQ-3lx"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" selectedImage="bookmark-7" id="44S-FQ-3lx"/>
                                     <tabBarItem title="Add" image="plus" id="CR6-9L-iRz"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="d2f-cM-sH7"/>
                                 </items>
@@ -2059,20 +2073,6 @@
                                 <rect key="frame" x="86" y="541" width="38" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="xJM-sB-6db">
-                                <rect key="frame" x="207" y="256" width="207" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.60784313725490191" green="0.090196078431372548" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Le Petite Prince">
-                                            <attributes>
-                                                <font key="NSFont" size="22" name="Futura-CondensedExtraBold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2106,7 +2106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="1y1-b3-k98"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="1y1-b3-k98"/>
                                     <tabBarItem title="Add" image="plus" id="F3Q-qU-tJx"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="Rlr-3k-Fhy"/>
                                 </items>
@@ -2205,6 +2205,9 @@
                                 <items>
                                     <navigationItem title="HopHead" id="65J-99-qqO">
                                         <barButtonItem key="backBarButtonItem" title="&lt;" id="3Lj-m6-B53"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3fv-C2-jXe">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -2213,7 +2216,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="0ZM-Hh-2OV"/>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="0ZM-Hh-2OV"/>
                                     <tabBarItem title="Add" image="plus" id="FVQ-Fs-Ud3"/>
                                     <tabBarItem title="Locations" image="pin-map-7" id="j6P-K5-Hps"/>
                                 </items>
@@ -2336,6 +2339,13 @@
                                         <rect key="frame" x="112" y="104" width="24" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="5gA-YQ-ndi">
+                                        <rect key="frame" x="366" y="22" width="25" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bookmark">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52941176470588236" green="0.031372549019607843" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -2393,99 +2403,109 @@
                                 <items>
                                     <navigationItem title="HopHead" id="Ve0-Ht-DLy">
                                         <barButtonItem key="backBarButtonItem" title="&lt;" id="6tB-IX-x5x"/>
-                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="2YK-tq-eNU"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="PTD-dL-A0g"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="2YK-tq-eNU">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="PTD-dL-A0g">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tabBar contentMode="scaleToFill" id="bYA-7D-ZDa">
-                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="eDA-ID-KXY"/>
-                                    <tabBarItem title="Add" image="plus" id="TbE-pG-cZ0"/>
-                                    <tabBarItem title="Locations" image="pin-map-7" id="0ky-ie-nNB"/>
-                                </items>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tabBar>
                             <view contentMode="scaleToFill" id="n9p-9G-uWz">
-                                <rect key="frame" x="0.0" y="201" width="414" height="283"/>
+                                <rect key="frame" x="0.0" y="201" width="414" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="XRA-MW-N0c">
-                                        <rect key="frame" x="68" y="226" width="24" height="19"/>
+                                        <rect key="frame" x="324" y="15" width="24" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="dTP-Fz-XMG">
-                                        <rect key="frame" x="90" y="226" width="24" height="19"/>
+                                        <rect key="frame" x="346" y="15" width="24" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="PYl-M0-4Y8">
-                                        <rect key="frame" x="112" y="226" width="24" height="19"/>
+                                        <rect key="frame" x="368" y="15" width="24" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brewery" textAlignment="natural" minimumFontSize="17" id="MxR-ab-P1u">
-                                        <rect key="frame" x="25" y="53" width="197" height="30"/>
+                                        <rect key="frame" x="25" y="79" width="367" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" id="F1J-cb-hRD">
-                                        <rect key="frame" x="25" y="87" width="197" height="30"/>
+                                        <rect key="frame" x="25" y="116" width="367" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="NOP-XZ-CKC">
-                                        <rect key="frame" x="25" y="19" width="197" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="3AM-mH-IDP">
-                                        <rect key="frame" x="23" y="226" width="24" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="hnq-k7-PlT">
-                                        <rect key="frame" x="45" y="226" width="24" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IBU" textAlignment="natural" minimumFontSize="17" id="fLS-jZ-zEz">
-                                        <rect key="frame" x="25" y="155" width="197" height="30"/>
+                                        <rect key="frame" x="25" y="43" width="367" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Style" textAlignment="natural" minimumFontSize="17" id="lfD-4G-mr2">
-                                        <rect key="frame" x="25" y="189" width="197" height="30"/>
+                                        <rect key="frame" x="25" y="190" width="367" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" textAlignment="natural" minimumFontSize="17" id="hDo-li-OF0">
+                                        <rect key="frame" x="26" y="228" width="366" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ABV" textAlignment="natural" minimumFontSize="17" id="vQ8-un-Zh8">
-                                        <rect key="frame" x="25" y="121" width="197" height="30"/>
+                                        <rect key="frame" x="25" y="153" width="181" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IBU" textAlignment="natural" minimumFontSize="17" id="fLS-jZ-zEz">
+                                        <rect key="frame" x="214" y="153" width="178" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="3AM-mH-IDP">
+                                        <rect key="frame" x="280" y="15" width="24" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big-star" id="hnq-k7-PlT">
+                                        <rect key="frame" x="302" y="15" width="24" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.031372549020000001" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ine-aV-4Yh">
-                                <rect key="frame" x="20" y="497" width="83" height="21"/>
+                                <rect key="frame" x="20" y="503" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter notes here." textAlignment="natural" id="GnR-md-3ho">
-                                <rect key="frame" x="15" y="526" width="374" height="128"/>
+                                <rect key="frame" x="15" y="527" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <tabBar contentMode="scaleToFill" id="bYA-7D-ZDa">
+                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Bookmarks" image="bookmark-7" id="eDA-ID-KXY"/>
+                                    <tabBarItem title="Add" image="plus" id="TbE-pG-cZ0"/>
+                                    <tabBarItem title="Locations" image="pin-map-7" id="0ky-ie-nNB"/>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2500,6 +2520,8 @@
     <resources>
         <image name="Plus Math-50" width="50" height="50"/>
         <image name="big-star" width="200" height="200"/>
+        <image name="bookmark" width="150" height="200"/>
+        <image name="bookmark-7" width="30" height="30"/>
         <image name="camera-7" width="30" height="30"/>
         <image name="petite-1" width="640" height="480"/>
         <image name="pin-map-7" width="30" height="30"/>

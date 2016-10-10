@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773F61D91DAB3BE9000577D3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 773F61D81DAB3BE9000577D3 /* libsqlite3.0.tbd */; };
+		773F61DB1DABF3D9000577D3 /* hophead.db in Resources */ = {isa = PBXBuildFile; fileRef = 773F61DA1DABF3D9000577D3 /* hophead.db */; };
+		773F61DD1DABFAD2000577D3 /* hophead.sql in Resources */ = {isa = PBXBuildFile; fileRef = 773F61DC1DABFAD2000577D3 /* hophead.sql */; };
+		773F61DF1DAC009C000577D3 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F61DE1DAC009C000577D3 /* ColorExtensions.swift */; };
 		77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54291D89D94B00B2E8CC /* AppDelegate.swift */; };
 		77EC542C1D89D94B00B2E8CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC542B1D89D94B00B2E8CC /* ViewController.swift */; };
 		77EC542F1D89D94C00B2E8CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC542D1D89D94C00B2E8CC /* Main.storyboard */; };
 		77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54301D89D94C00B2E8CC /* HopHead.xcdatamodeld */; };
 		77EC54341D89D94C00B2E8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EC54331D89D94C00B2E8CC /* Assets.xcassets */; };
 		77EC54371D89D94C00B2E8CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */; };
-		77EC54421D89D94C00B2E8CC /* HopHeadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54411D89D94C00B2E8CC /* HopHeadTests.swift */; };
-		77EC544D1D89D94C00B2E8CC /* HopHeadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC544C1D89D94C00B2E8CC /* HopHeadUITests.swift */; };
 		8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		773F61D31DAB3AFB000577D3 /* HopHead-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HopHead-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		773F61D81DAB3BE9000577D3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		773F61DA1DABF3D9000577D3 /* hophead.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = hophead.db; sourceTree = "<group>"; };
+		773F61DC1DABFAD2000577D3 /* hophead.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hophead.sql; sourceTree = "<group>"; };
+		773F61DE1DAC009C000577D3 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		77EC54261D89D94B00B2E8CC /* HopHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC54291D89D94B00B2E8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77EC542B1D89D94B00B2E8CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,11 +52,7 @@
 		77EC54361D89D94C00B2E8CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77EC54381D89D94C00B2E8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77EC543D1D89D94C00B2E8CC /* HopHeadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopHeadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77EC54411D89D94C00B2E8CC /* HopHeadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopHeadTests.swift; sourceTree = "<group>"; };
-		77EC54431D89D94C00B2E8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77EC54481D89D94C00B2E8CC /* HopHeadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopHeadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77EC544C1D89D94C00B2E8CC /* HopHeadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopHeadUITests.swift; sourceTree = "<group>"; };
-		77EC544E1D89D94C00B2E8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773F61D91DAB3BE9000577D3 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		773F61D71DAB3BE9000577D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				773F61D81DAB3BE9000577D3 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77EC541D1D89D94B00B2E8CC = {
 			isa = PBXGroup;
 			children = (
 				77EC54281D89D94B00B2E8CC /* HopHead */,
-				77EC54401D89D94C00B2E8CC /* HopHeadTests */,
-				77EC544B1D89D94C00B2E8CC /* HopHeadUITests */,
 				77EC54271D89D94B00B2E8CC /* Products */,
+				773F61D71DAB3BE9000577D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,32 +114,18 @@
 			children = (
 				8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */,
 				77EC54291D89D94B00B2E8CC /* AppDelegate.swift */,
+				773F61DA1DABF3D9000577D3 /* hophead.db */,
+				773F61DC1DABFAD2000577D3 /* hophead.sql */,
 				77EC542B1D89D94B00B2E8CC /* ViewController.swift */,
+				773F61DE1DAC009C000577D3 /* ColorExtensions.swift */,
 				77EC542D1D89D94C00B2E8CC /* Main.storyboard */,
 				77EC54331D89D94C00B2E8CC /* Assets.xcassets */,
 				77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */,
 				77EC54381D89D94C00B2E8CC /* Info.plist */,
 				77EC54301D89D94C00B2E8CC /* HopHead.xcdatamodeld */,
+				773F61D31DAB3AFB000577D3 /* HopHead-Bridging-Header.h */,
 			);
 			path = HopHead;
-			sourceTree = "<group>";
-		};
-		77EC54401D89D94C00B2E8CC /* HopHeadTests */ = {
-			isa = PBXGroup;
-			children = (
-				77EC54411D89D94C00B2E8CC /* HopHeadTests.swift */,
-				77EC54431D89D94C00B2E8CC /* Info.plist */,
-			);
-			path = HopHeadTests;
-			sourceTree = "<group>";
-		};
-		77EC544B1D89D94C00B2E8CC /* HopHeadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				77EC544C1D89D94C00B2E8CC /* HopHeadUITests.swift */,
-				77EC544E1D89D94C00B2E8CC /* Info.plist */,
-			);
-			path = HopHeadUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,21 +191,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sophie Gairo";
 				TargetAttributes = {
 					77EC54251D89D94B00B2E8CC = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Y55SEPMTBM;
+						LastSwiftMigration = 0800;
 					};
 					77EC543C1D89D94C00B2E8CC = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Y55SEPMTBM;
+						LastSwiftMigration = 0800;
 						TestTargetID = 77EC54251D89D94B00B2E8CC;
 					};
 					77EC54471D89D94C00B2E8CC = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Y55SEPMTBM;
+						LastSwiftMigration = 0800;
 						TestTargetID = 77EC54251D89D94B00B2E8CC;
 					};
 				};
@@ -239,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77EC54371D89D94C00B2E8CC /* LaunchScreen.storyboard in Resources */,
+				773F61DD1DABFAD2000577D3 /* hophead.sql in Resources */,
 				77EC54341D89D94C00B2E8CC /* Assets.xcassets in Resources */,
 				77EC542F1D89D94C00B2E8CC /* Main.storyboard in Resources */,
+				773F61DB1DABF3D9000577D3 /* hophead.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77EC542C1D89D94B00B2E8CC /* ViewController.swift in Sources */,
+				773F61DF1DAC009C000577D3 /* ColorExtensions.swift in Sources */,
 				77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */,
 				77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */,
 				8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */,
@@ -276,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EC54421D89D94C00B2E8CC /* HopHeadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EC544D1D89D94C00B2E8CC /* HopHeadUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +338,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -383,8 +386,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -403,6 +408,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -412,10 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HopHead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HopHead-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -423,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HopHead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HopHead-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -438,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHeadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HopHead.app/HopHead";
 			};
 			name = Debug;
@@ -450,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHeadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HopHead.app/HopHead";
 			};
 			name = Release;
@@ -461,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHeadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HopHead;
 			};
 			name = Debug;
@@ -472,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HopHeadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HopHead;
 			};
 			name = Release;

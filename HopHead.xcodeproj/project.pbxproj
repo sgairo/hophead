@@ -11,6 +11,7 @@
 		773F61DB1DABF3D9000577D3 /* hophead.db in Resources */ = {isa = PBXBuildFile; fileRef = 773F61DA1DABF3D9000577D3 /* hophead.db */; };
 		773F61DD1DABFAD2000577D3 /* hophead.sql in Resources */ = {isa = PBXBuildFile; fileRef = 773F61DC1DABFAD2000577D3 /* hophead.sql */; };
 		773F61DF1DAC009C000577D3 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F61DE1DAC009C000577D3 /* ColorExtensions.swift */; };
+		773F61E31DAD445E000577D3 /* AlesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F61E21DAD445E000577D3 /* AlesTableTableViewController.swift */; };
 		77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54291D89D94B00B2E8CC /* AppDelegate.swift */; };
 		77EC542C1D89D94B00B2E8CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC542B1D89D94B00B2E8CC /* ViewController.swift */; };
 		77EC542F1D89D94C00B2E8CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC542D1D89D94C00B2E8CC /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		773F61DA1DABF3D9000577D3 /* hophead.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = hophead.db; sourceTree = "<group>"; };
 		773F61DC1DABFAD2000577D3 /* hophead.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hophead.sql; sourceTree = "<group>"; };
 		773F61DE1DAC009C000577D3 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		773F61E21DAD445E000577D3 /* AlesTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlesTableTableViewController.swift; sourceTree = "<group>"; };
 		77EC54261D89D94B00B2E8CC /* HopHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC54291D89D94B00B2E8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77EC542B1D89D94B00B2E8CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				773F61DC1DABFAD2000577D3 /* hophead.sql */,
 				77EC542B1D89D94B00B2E8CC /* ViewController.swift */,
 				773F61DE1DAC009C000577D3 /* ColorExtensions.swift */,
+				773F61E21DAD445E000577D3 /* AlesTableTableViewController.swift */,
 				77EC542D1D89D94C00B2E8CC /* Main.storyboard */,
 				77EC54331D89D94C00B2E8CC /* Assets.xcassets */,
 				77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */,
 				77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */,
 				8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */,
+				773F61E31DAD445E000577D3 /* AlesTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

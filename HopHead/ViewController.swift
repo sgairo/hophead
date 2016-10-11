@@ -278,23 +278,17 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
         db = nil
         
         
+       
+        let alert = UIAlertController(title: "Success", message: "Your beer has been successfully added!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Cool!", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+            
+        
+        
+        
         
     }
-    
-
-    
-    
-    
-    
-    
-    
-    
-    //open database function
-    
-    
-    
-    
-    
+ 
     
     
     

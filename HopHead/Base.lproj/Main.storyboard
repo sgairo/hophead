@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="w49-bY-g6m" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PwA-Pq-5sh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="9VS-PG-mPe">
@@ -108,27 +108,14 @@
             </objects>
             <point key="canvasLocation" x="183" y="-986"/>
         </scene>
-        <!--View Controller-->
+        <!--Ales Table-->
         <scene sceneID="Sxi-OZ-7VN">
             <objects>
-                <viewController id="0NM-BY-nRI" sceneMemberID="viewController">
+                <viewController id="0NM-BY-nRI" customClass="AlesTable" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRC-qw-3th">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="bg4-od-Bdh">
-                                <frame key="frameInset" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="HopHead" id="Q5f-mE-EHi">
-                                        <barButtonItem key="backBarButtonItem" title="&lt;" id="gcx-cP-uOK"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="xna-YP-az8">
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2qU-IR-gmY">
                                 <frame key="frameInset" minY="44" width="414" height="643"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -509,16 +496,16 @@
             </objects>
             <point key="canvasLocation" x="-1800" y="-520"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Ales Table Table View Controller-->
         <scene sceneID="xjI-YJ-NGO">
             <objects>
-                <tableViewController id="D6p-Ev-YAg" sceneMemberID="viewController">
+                <tableViewController id="D6p-Ev-YAg" customClass="AlesTableTableViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fpb-cg-1CE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="idy-4q-rvu">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UEW-Ub-zLr">
@@ -543,24 +530,30 @@
                             <color key="backgroundColor" red="1" green="0.79421797877618894" blue="0.10176392537090229" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="uoT-Rs-oE8">
-                                <rect key="frame" x="0.0" y="112" width="414" height="92"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="92" id="uoT-Rs-oE8">
+                                <rect key="frame" x="0.0" y="112" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uoT-Rs-oE8" id="uYR-sq-Ach">
-                                    <frame key="frameInset" width="414" height="92"/>
+                                    <frame key="frameInset" width="375" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e7S-P1-vJC">
-                                            <frame key="frameInset" minX="99" minY="55" width="79" height="21"/>
+                                            <frame key="frameInset" minX="99" minY="55" width="36" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
-                                                <fragment content="ABV: 3.4%">
+                                                <fragment content="ABV: ">
                                                     <attributes>
                                                         <font key="NSFont" size="16" name="HelveticaNeue-Italic"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ln-jb-Xrb">
+                                            <frame key="frameInset" minX="136" minY="55" width="36" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CdQ-Vg-DHc">
@@ -585,16 +578,22 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wM6-vk-Alp">
-                                            <frame key="frameInset" minX="194" minY="55" width="79" height="21"/>
+                                            <frame key="frameInset" minX="194" minY="55" width="32" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
-                                                <fragment content="IBU: 36">
+                                                <fragment content="IBU: ">
                                                     <attributes>
                                                         <font key="NSFont" size="16" name="HelveticaNeue-Italic"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TYa-ZQ-NWa">
+                                            <frame key="frameInset" minX="228" minY="55" width="36" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -616,7 +615,7 @@
             <objects>
                 <viewController id="ngk-Zz-ggD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QYt-ea-Khc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ENg-tB-CoG">
@@ -1019,7 +1018,7 @@
             <objects>
                 <viewController id="x3U-Uq-lxC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSx-ea-Id5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="CHf-Us-plJ">
@@ -1419,7 +1418,7 @@
             <objects>
                 <viewController id="Kuj-TU-v15" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zej-r6-dyA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="hhY-gZ-Qrh">
@@ -1819,7 +1818,7 @@
             <objects>
                 <viewController id="xWp-0s-9mO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v9F-0V-fT1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="l2P-zA-gnW">
@@ -2112,7 +2111,7 @@
             <objects>
                 <viewController id="21y-AM-cj1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zf6-3p-kad">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="petite-1" id="kg6-Ld-BsT">
@@ -2317,7 +2316,7 @@
             <objects>
                 <viewController id="FnG-WH-tCz" customClass="ViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hgt-St-Ahn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" id="n9p-9G-uWz">
@@ -2479,9 +2478,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="VNx-ED-GJb"/>
+        <segue reference="AMH-fT-ppP"/>
     </inferredMetricsTieBreakers>
 </document>

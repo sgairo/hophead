@@ -120,6 +120,11 @@ class ViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDeleg
             return
         }
         
+        //TO DO: check that beerName isnt already in DB
+        
+        
+        
+        
         if !(self.beerName_txt.text?.isEmpty)! {
             name = self.beerName_txt.text!
         }

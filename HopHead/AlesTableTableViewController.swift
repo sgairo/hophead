@@ -11,7 +11,7 @@ import UIKit
 class AlesTableTableViewController: UITableViewController {
 
     
-
+    let cellReuseIdentifier = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,8 @@ class AlesTableTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
+        //self.tableView.allowsMultipleSelectionDuringEditing = false
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         //open Database
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -92,6 +92,15 @@ class AlesTableTableViewController: UITableViewController {
         }
         
         statement = nil
+        
+        
+        
+        //close db & set to nil
+        if sqlite3_close(db) != SQLITE_OK {
+            print("error closing database")
+        }
+        
+        db = nil
 
     }
 
@@ -139,8 +148,20 @@ class AlesTableTableViewController: UITableViewController {
 
         
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AleTableViewCell
             cell.textLabel?.text = beerNames[indexPath.item]
+            
+            
+            
+            
+            // Fetches the appropriate meal for the data source layout.
+            //let meal = meals[indexPath.row]
+            
+            //cell.nameLabel.text = meal.name
+            //cell.photoImageView.image = meal.photo
+            //cell.ratingControl.rating = meal.rating
+            
+            
             
             return cell
         }
@@ -179,21 +200,6 @@ class AlesTableTableViewController: UITableViewController {
         }
         
     
-        //query database
-        
-        
-        
-        //populate tables
-        
-        
-        
-        
-        
-        //close database
-     
-        
-        
-        
         //var color = UIColor.white
         
         ////////////////////////////////////////////
@@ -219,25 +225,85 @@ class AlesTableTableViewController: UITableViewController {
     
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-
-    /*
+    
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let name = beerNames[indexPath.row]
+            beerNames.remove(at: indexPath.row)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
+            //remove from DB
+            
+            //let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            //let name = cell.textLabel?.text
+            //print("THIS IS THE NAME TO BE DELETED")
+            print(name)
+            
+            
+            //open Database
+            let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                .appendingPathComponent("hophead.db")
+            
+            
+            
+            var db: OpaquePointer? = nil
+            if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+                print("error opening database")
+            }
+
+            let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
+            var statement: OpaquePointer? = nil
+            
+            if sqlite3_prepare_v2(db, "delete from beers where beerName = (?)", -1, &statement, nil) != SQLITE_OK {
+                let errmsg = String(cString: sqlite3_errmsg(db))
+                print("error preparing select: \(errmsg)")
+            }
+            
+            if sqlite3_bind_text(statement, 1, name, -1, SQLITE_TRANSIENT) != SQLITE_OK {
+                let errmsg = String(cString: sqlite3_errmsg(db))
+                print("failure binding name delete: \(errmsg)")
+            }
+
+            //one step
+            if sqlite3_step(statement) != SQLITE_DONE {
+                let errmsg = String(cString: sqlite3_errmsg(db))
+                print("failure deleting beer: \(errmsg)")
+            }
+            
+            
+            //finalize & reset statement
+            if sqlite3_finalize(statement) != SQLITE_OK {
+                let errmsg = String(cString: sqlite3_errmsg(db))
+                print("error finalizing prepared statement: \(errmsg)")
+            }
+            
+            statement = nil
+
+            //close db & set to nil
+            if sqlite3_close(db) != SQLITE_OK {
+                print("error closing database")
+            }
+            
+            db = nil
+            
+            
+            
+            
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

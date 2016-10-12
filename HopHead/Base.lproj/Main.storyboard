@@ -530,11 +530,11 @@
                             <color key="backgroundColor" red="1" green="0.79421797877618894" blue="0.10176392537090229" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="92" id="uoT-Rs-oE8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="92" id="uoT-Rs-oE8" customClass="AleTableViewCell" customModule="HopHead" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="112" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uoT-Rs-oE8" id="uYR-sq-Ach">
-                                    <frame key="frameInset" width="375" height="92"/>
+                                    <frame key="frameInset" width="375" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e7S-P1-vJC">
@@ -2482,6 +2482,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="00n-Ms-DvI"/>
+        <segue reference="AMH-fT-ppP"/>
     </inferredMetricsTieBreakers>
 </document>

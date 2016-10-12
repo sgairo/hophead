@@ -9,6 +9,25 @@
 import UIKit
 
 class AleTableViewCell: UITableViewCell {
+    
+    //MARK:Property
+    
+    @IBOutlet weak var color_lbl: UILabel!
+    
+    @IBOutlet weak var beerName_lbl: UILabel!
+    
+    
+    @IBOutlet weak var abv_lbl: UILabel!
+    
+    @IBOutlet weak var ibu_lbl: UILabel!
+    
+    
+    @IBOutlet weak var abvValue_lbl: UILabel!
+    
+    @IBOutlet weak var ibuValue_lbl: UILabel!
+    
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

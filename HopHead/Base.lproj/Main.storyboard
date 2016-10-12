@@ -598,6 +598,14 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="abvValue_lbl" destination="8ln-jb-Xrb" id="MM6-zV-Q63"/>
+                                    <outlet property="abv_lbl" destination="e7S-P1-vJC" id="Fsv-uD-gIa"/>
+                                    <outlet property="beerName_lbl" destination="CdQ-Vg-DHc" id="W9L-Aj-ACi"/>
+                                    <outlet property="color_lbl" destination="acw-Qq-eOl" id="UKw-6o-ZPB"/>
+                                    <outlet property="ibuValue_lbl" destination="TYa-ZQ-NWa" id="8l8-22-3ft"/>
+                                    <outlet property="ibu_lbl" destination="wM6-vk-Alp" id="YFN-sg-QHD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

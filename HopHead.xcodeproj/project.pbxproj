@@ -19,6 +19,8 @@
 		77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77EC54301D89D94C00B2E8CC /* HopHead.xcdatamodeld */; };
 		77EC54341D89D94C00B2E8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EC54331D89D94C00B2E8CC /* Assets.xcassets */; };
 		77EC54371D89D94C00B2E8CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */; };
+		8A2F8F331DAE77D40003E34B /* LagersTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F8F321DAE77D40003E34B /* LagersTableTableViewController.swift */; };
+		8A2F8F351DAE7A800003E34B /* lagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F8F341DAE7A800003E34B /* lagerTableViewCell.swift */; };
 		8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		77EC54381D89D94C00B2E8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77EC543D1D89D94C00B2E8CC /* HopHeadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopHeadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC54481D89D94C00B2E8CC /* HopHeadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopHeadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F8F321DAE77D40003E34B /* LagersTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LagersTableTableViewController.swift; sourceTree = "<group>"; };
+		8A2F8F341DAE7A800003E34B /* lagerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lagerTableViewCell.swift; sourceTree = "<group>"; };
 		8A77B0AD1D95797900C96D69 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +127,9 @@
 				77EC542B1D89D94B00B2E8CC /* ViewController.swift */,
 				773F61DE1DAC009C000577D3 /* ColorExtensions.swift */,
 				773F61E21DAD445E000577D3 /* AlesTableTableViewController.swift */,
+				8A2F8F321DAE77D40003E34B /* LagersTableTableViewController.swift */,
 				77771A4B1DADF0000029D469 /* AleTableViewCell.swift */,
+				8A2F8F341DAE7A800003E34B /* lagerTableViewCell.swift */,
 				77EC542D1D89D94C00B2E8CC /* Main.storyboard */,
 				77EC54331D89D94C00B2E8CC /* Assets.xcassets */,
 				77EC54351D89D94C00B2E8CC /* LaunchScreen.storyboard */,
@@ -276,7 +282,9 @@
 				773F61DF1DAC009C000577D3 /* ColorExtensions.swift in Sources */,
 				77EC542A1D89D94B00B2E8CC /* AppDelegate.swift in Sources */,
 				77EC54321D89D94C00B2E8CC /* HopHead.xcdatamodeld in Sources */,
+				8A2F8F331DAE77D40003E34B /* LagersTableTableViewController.swift in Sources */,
 				77771A4C1DADF0000029D469 /* AleTableViewCell.swift in Sources */,
+				8A2F8F351DAE7A800003E34B /* lagerTableViewCell.swift in Sources */,
 				8A77B0AE1D95797900C96D69 /* CosmosDistrib.swift in Sources */,
 				773F61E31DAD445E000577D3 /* AlesTableTableViewController.swift in Sources */,
 			);

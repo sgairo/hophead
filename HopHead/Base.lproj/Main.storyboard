@@ -72,6 +72,9 @@
                                     <string key="title">Porters
  Stouts</string>
                                 </state>
+                                <connections>
+                                    <segue destination="6KD-te-QFE" kind="modal" id="xhM-dB-Vzd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="WgO-RD-qhX">
                                 <frame key="frameInset" minX="207" minY="250" width="207" height="207"/>
@@ -86,6 +89,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="OMx-i3-Zlo" kind="modal" id="d5b-J8-w44"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Rpw-3j-TgB">
                                 <frame key="frameInset" minY="456" width="414" height="231"/>
@@ -2232,11 +2238,11 @@
             </objects>
             <point key="canvasLocation" x="-1200.5" y="-1584.5"/>
         </scene>
-        <!--Ales Table Table View Controller-->
+        <!--Malts Table Table View Controller-->
         <scene sceneID="H5z-gi-oLs">
             <objects>
-                <tableViewController id="OMx-i3-Zlo" customClass="AlesTableTableViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="4g6-5j-SHO">
+                <tableViewController id="OMx-i3-Zlo" customClass="MaltsTableTableViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="4g6-5j-SHO" userLabel="Malt View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2266,7 +2272,7 @@
                             <color key="backgroundColor" red="0.67811381816864014" green="0.15110298991203308" blue="0.070041649043560028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AleTableViewCell" rowHeight="92" id="drH-Wi-aWW" customClass="AleTableViewCell" customModule="HopHead" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MaltsTableViewCell" rowHeight="92" id="drH-Wi-aWW" customClass="MaltsTableViewCell" customModule="HopHead" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="112" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="drH-Wi-aWW" id="9OU-ke-T7q">
@@ -2355,19 +2361,16 @@
                             <outlet property="delegate" destination="OMx-i3-Zlo" id="uCn-M6-LLD"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="aleView" destination="4g6-5j-SHO" id="TW6-uX-7CV"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYh-Jq-xmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-334" y="-1655"/>
         </scene>
-        <!--Ales Table Table View Controller-->
+        <!--Porters Stouts Table Table View Controller-->
         <scene sceneID="CLK-cQ-xDR">
             <objects>
-                <tableViewController id="6KD-te-QFE" customClass="AlesTableTableViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="YJ9-yu-DAX">
+                <tableViewController id="6KD-te-QFE" customClass="PortersStoutsTableTableViewController" customModule="HopHead" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="YJ9-yu-DAX" userLabel="Porters Stouts View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2397,7 +2400,7 @@
                             <color key="backgroundColor" red="0.77646619081497192" green="0.30859389901161194" blue="0.017004823312163353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AleTableViewCell" rowHeight="92" id="c78-1d-BAv" customClass="AleTableViewCell" customModule="HopHead" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PortersStoutsTableViewCell" rowHeight="92" id="c78-1d-BAv" customClass="PortersStoutsTableViewCell" customModule="HopHead" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="112" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c78-1d-BAv" id="fEY-ZE-Rb2">
@@ -2486,9 +2489,6 @@
                             <outlet property="delegate" destination="6KD-te-QFE" id="tg0-2n-JvX"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="aleView" destination="YJ9-yu-DAX" id="HIV-an-yQU"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqM-08-K59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2509,6 +2509,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WE7-u2-dbB"/>
+        <segue reference="vTF-gy-vEF"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,6 +26,7 @@ class AleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var ibuValue_lbl: UILabel!
     
+    @IBOutlet weak var fav_btn: UIButton!
     
     
 

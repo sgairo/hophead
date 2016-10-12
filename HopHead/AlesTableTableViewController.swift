@@ -10,8 +10,33 @@ import UIKit
 
 class AlesTableTableViewController: UITableViewController {
 
+    @IBOutlet var aleView: UITableView!
     
-    let cellReuseIdentifier = "cell"
+    
+    ////////////////////////////////////////////
+    /////////////...COLORS...///////////////////
+    ////////////////////////////////////////////
+    let alesColor = UIColor(red: 247, green: 183, blue: 45)
+    //NOTE: The above colors are the 3rd hue in each color gradient.
+    //Example color gradient: alesAccent1Color, alesAccent2Color, alesColor, alesAccent4Color
+    
+    let alesAccent1Color = UIColor(red: 244, green: 204, blue: 132)
+    let alesAccent2Color = UIColor(red: 244, green: 193, blue: 103)
+    let alesAccent4Color = UIColor(red: 216, green: 157, blue: 39)
+    
+    
+    
+    ////////////////////////////////////////////
+    /////////////TABLE ARRAYS///////////////////
+    ////////////////////////////////////////////
+    var beerNames = [String]()
+    var abvs = [Int]()
+    var ibus = [Int]()
+    var colors = [UIColor(red: 247, green: 183, blue: 45), UIColor(red: 244, green: 204, blue: 132),UIColor(red: 244, green: 193, blue: 103), UIColor(red: 216, green: 157, blue: 39) ]
+
+    var favorties = [Int] ()
+    
+    //let cellReuseIdentifier = "AleTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +46,7 @@ class AlesTableTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         //self.tableView.allowsMultipleSelectionDuringEditing = false
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         //open Database
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -75,14 +100,13 @@ class AlesTableTableViewController: UITableViewController {
                 print("abv = \(abv)")
             
             
-            //  if let ibu = sqlite3_column_int(statement, 5) {
-            //    //let ibuInt = Int8(CInt: ibu)
-            //  ibus.append(ibu)
-            //print("ibu = \(ibu)")
-            //} else {
-            //  print("name not found")
-            //}
-            
+            let ibu = sqlite3_column_int(statement, 5) ;
+            ibus.append(Int(ibu))
+            print("ibu = \(ibu)")
+ 
+            let fav = sqlite3_column_int(statement,8) ;
+            favorties.append(Int(fav))
+            print("fav= \(fav)")
             
         }
         
@@ -96,11 +120,13 @@ class AlesTableTableViewController: UITableViewController {
         
         
         //close db & set to nil
-        if sqlite3_close(db) != SQLITE_OK {
-            print("error closing database")
-        }
+        //if sqlite3_close(db) != SQLITE_OK {
+          //  print("error closing database")
+        //}
         
-        db = nil
+       // db = nil
+        print(beerNames)
+        
 
     }
 
@@ -124,43 +150,31 @@ class AlesTableTableViewController: UITableViewController {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-
-        var beerNames = [String]()
-        var abvs = [Int]()
-        var ibus = [Int]()
-        var colors = [UIColor]()
-        //colors.append(UIColor.white)
-        
-        
-  
-        
         override func numberOfSections(in tableView: UITableView) -> Int {
-            return 2
+            return 1
         }
         
 
         
-        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AleTableViewCell
-            cell.textLabel?.text = beerNames[indexPath.item]
+       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            //var cell = UITableViewCell() as! AleTableViewCell
+             let cell = tableView.dequeueReusableCell(withIdentifier: "AleTableViewCell", for: indexPath) as! AleTableViewCell
             
-            
-            
-            
-            // Fetches the appropriate meal for the data source layout.
-            //let meal = meals[indexPath.row]
-            
-            //cell.nameLabel.text = meal.name
-            //cell.photoImageView.image = meal.photo
-            //cell.ratingControl.rating = meal.rating
-            
+            let colorIndex = Int(arc4random_uniform(4))
+            let color = colors[colorIndex]
+
+            //TO DO: ADD Favorites array output
+            if favorties[indexPath.item]==0
+            {
+                cell.fav_btn.isHidden = true
+            }
+        
+            cell.color_lbl.backgroundColor = color
+            cell.beerName_lbl.text = beerNames[indexPath.item]
+            cell.abvValue_lbl.text = String(abvs[indexPath.item])
+            cell.ibuValue_lbl.text = String(ibus[indexPath.item])
+            cell.abv_lbl.text = "ABV:"
+            cell.ibu_lbl.text = "IBU:"
             
             
             return cell
@@ -179,16 +193,16 @@ class AlesTableTableViewController: UITableViewController {
             }
         }
         
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = UITableViewCell()
-            if indexPath.section == 0
-            {
-                let beer = beerNames[indexPath.row]
-                //let abv = abvs[indexPath.row]
-                //let ibu = ibus[indexPath.row]
-                                cell.textLabel?.text = beer
+        //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          //  let cell = UITableViewCell()
+           // if indexPath.section == 0
+            //{
+             //  let beer = beerNames[indexPath.row]
+              //  let abv = abvs[indexPath.row]
+               // let ibu = ibus[indexPath.row]
+                //                cell.textLabel?.text = beer
                 //cell.textLabel?.text = String(abv)
-            }
+            //}
            // else
             //{
                 //var colorIndex = Int(arc4random_uniform(4) + 1)
@@ -196,35 +210,10 @@ class AlesTableTableViewController: UITableViewController {
                 //cell.textLabel?.backgroundColor = color
             //}
             
-            return cell
-        }
+           // return cell
+        //}
         
-    
-        //var color = UIColor.white
-        
-        ////////////////////////////////////////////
-        /////////////...COLORS...///////////////////
-        ////////////////////////////////////////////
-        let alesColor = UIColor(red: 247, green: 183, blue: 45)
-        //NOTE: The above colors are the 3rd hue in each color gradient.
-        //Example color gradient: alesAccent1Color, alesAccent2Color, alesColor, alesAccent4Color
-        
-        let alesAccent1Color = UIColor(red: 244, green: 204, blue: 132)
-        let alesAccent2Color = UIColor(red: 244, green: 193, blue: 103)
-        let alesAccent4Color = UIColor(red: 216, green: 157, blue: 39)
-        
-        
-        //colors.append(alesColor)
-        
-        
-    
-        
-    
-    
-    
-    
-    
-
+  
     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -294,9 +283,6 @@ class AlesTableTableViewController: UITableViewController {
             }
             
             db = nil
-            
-            
-            
             
             
         } else if editingStyle == .insert {
